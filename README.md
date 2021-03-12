@@ -1,5 +1,7 @@
 # Video streaming site
 
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 ## Description
 
 This project will allow for the business owner to upload pre-recorded videos. Clients/customers can view these videos. The pre-recorded videos will store data such as views (not who has viewed, but just count views), a title, a description and posted date.
@@ -19,8 +21,6 @@ Node.js, express.js and MongoDB for the backend.
 
 This project is open. Feel free to take this skeleton and build on it for your own projects.
 
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ### Getting Started
 
