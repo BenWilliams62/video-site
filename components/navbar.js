@@ -10,10 +10,10 @@ export default function Navbar(){
     }
 
     return(
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-            <Link href="/home">
+        <nav className="navbar navbar-expand-lg bg-trans w-full sticky-top">
+            <Link href="/">
                 <a className="navbar-brand" >
-                <h3>Home</h3>
+                <h3>Logo</h3>
                 </a>
                 
             </Link>
@@ -23,31 +23,28 @@ export default function Navbar(){
             </button>
     
             <div className={toggle} id="nav-links">
+                <form className="form-inline my-2 my-lg-0">
+                    <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button className="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                </form>
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <Link href="/view">
+                        <Link href="/auth">
                             <a className="nav-link">
-                                Experience
-                            </a>
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link href="/upload">
-                            <a className="nav-link">
-                                About
+                                Account
                             </a>
                         </Link>
                     </li>
                     <li className="nav-item">
                         <Link href="/auth">
-                            <a className="nav-link">Blog</a>
+                            <a className="nav-link">
+                                log in
+                            </a>
                         </Link>
-                    </li>
-                    <li className="nav-item">
-                        <a href="mailto:benwilliams6299@gmail.com" className="nav-link">Contact</a>
                     </li>
                     
                 </ul>
+                
             </div>
         </nav>
     )
