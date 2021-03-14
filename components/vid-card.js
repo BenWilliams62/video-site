@@ -10,9 +10,11 @@ export default function PreviewCard(props){
                 <div className="preview-image">
                     <img src={props.img} alt="video thumbnail" />
                 </div>
+                <div className="blur-overlay"></div>
 
                 <div className="preview-overlay">
-                    <div class="preview-text">
+                    
+                    <div className="preview-text">
                         <h2>{props.title}</h2>
                         <p>{props.text.substring(0,50)}</p>
                         <br />

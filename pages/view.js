@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 
 import Navbar from '../components/navbar'
 import PreviewCard from '../components/vid-card'
+import ReactPlayer from 'react-player'
 
 export default function View() {
   
@@ -19,8 +20,19 @@ export default function View() {
       </Head>
 
       <div className="video-player">
-          <div className="video"></div>
-          <div className="video-info"></div>
+          <div className="video">
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=dn5Tattkj_E"
+              width='100%'
+              height='100%'
+              className="react-player"
+            />
+          </div>
+          <div className="video-info">
+            <h3>Title</h3>
+            <p>Description</p>
+            <small>Views</small>
+          </div>
           
         
         <div className="video-string-v rounded d-flex flex-wrap justify-content-around right-list">
