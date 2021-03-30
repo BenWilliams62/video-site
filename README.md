@@ -4,18 +4,16 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Description
 
-This project will allow for the business owner to upload pre-recorded videos. Clients/customers can view these videos. The pre-recorded videos will store data such as views (not who has viewed, but just count views), a title, a description and posted date.
+This is a simple front end project, to get to grips with how next.js works. It utilises the getServerSideProps functions and dynamic routing. No backend was built, so the api calls and handling of data is left for the individual project.
 
 
 ## Technologies
 
 - Next.js
 - React
-- MongoDB
 - Node.js
 
 Next.js and React for the front end. Next.js will allow for better SEO and better performance.
-Node.js, express.js and MongoDB for the backend.
 
 ## License
 
