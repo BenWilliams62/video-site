@@ -14,9 +14,7 @@ const data = {
   views: 200
 }
 
-
-
-export default function View() {
+function View({data}) {
   const router = useRouter();
   const { id } = router.query; // Destructuring our router object
   // api call using id for video details
@@ -56,4 +54,19 @@ export default function View() {
   )
 }
   
-// api call for more videos. Same as in index.js
+// get props
+export async function getServerSideProps(context) {
+  const res = await fetch('api/url');
+  const data = await res.json()
+  if (!data) {
+    return (
+      console.log("no data")
+    )
+  }
+  return {
+    props: { data }
+  };
+
+};
+
+export default View

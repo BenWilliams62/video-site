@@ -31,7 +31,7 @@ const videoList = [
   }
 ]
 
-export default function Home() {
+function Home({data}) {
   
   return (
     <div className={styles.container}>
@@ -62,3 +62,20 @@ export default function Home() {
     </div>
   )
 }
+
+// get props
+export async function getServerSideProps(context) {
+  const res = await fetch('api/url');
+  const data = await res.json()
+  if (!data) {
+    return (
+      console.log("no data")
+    )
+  }
+  return {
+    props: { data }
+  };
+
+};
+
+export default Home
